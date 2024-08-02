@@ -212,7 +212,9 @@ return [
     */
 
     'aliases' => Facade::defaultAliases()->merge([
+        'Voyager' => App\Voyager\Voyager::class,
         // 'ExampleClass' => App\Example\ExampleClass::class,
     ])->toArray(),
+
 
 ];

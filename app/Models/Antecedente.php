@@ -16,7 +16,7 @@ class Antecedente extends Model
     {
         if (Auth::user()->role_id == 2) {
             // $this->documento_tercero = Auth::user()->username;
-            return $query->where('email', Auth::user()->email);
+            return $query->where('id', Auth::user()->id);
         } else {
             // Si el usuario no está autenticado o su role_id no es igual a 2, retornamos una consulta vacía
             // return $query->where('id', '=', null);
